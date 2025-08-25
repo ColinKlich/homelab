@@ -16,7 +16,7 @@
 
 ## 🖥️ Hardware
 
-![Homelab Rack Example](https://raw.githubusercontent.com/colinklich/homelab/main/storage/1_proxmox-repos.jpeg) <!-- Replace with your own image if available -->
+(Picture coming soon!)
 
 ### 🗄️ Servers and NAS
 
