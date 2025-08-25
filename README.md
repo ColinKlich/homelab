@@ -1,50 +1,69 @@
-# My Homelab Setup
-This is an overview of my homelab setup and the services I'm currently running. 
+# 🏠 My Homelab Setup
 
-## Navigation
-* [Apps](https://github.com/colinklich/homelab/tree/main/apps) - List of all the apps and services.
-* [Home Assistant](https://github.com/colinklich/homelab/tree/main/homeassistant) - Smart home services and automation.
-* [Media Server](https://github.com/colinklich/homelab/tree/main/media) - Plex, Jellyfin, *arr stack, and more.
-* [Server Monitoring](https://github.com/colinklich/homelab/tree/main/monitoring) - Graphs and Visualizations for Unraid, Proxmox, and more.
-* [Storage](https://github.com/colinklich/homelab/tree/main/storage) - Current Storage and Backup Solution.
-* [Proxy Managment](https://github.com/colinklich/homelab/tree/main/proxy) - NGINX Proxy Manager, DDNS with Cloudflare, Local Domains, and more.
+> _A living, ever-evolving collection of self-hosted services, automation, and hardware tinkering!_
 
-## Hardware
+---
 
-(Picture coming soon!)
+## 🚀 Navigation
+- [🗂️ Apps](https://github.com/colinklich/homelab/tree/main/apps) — List of all the apps and services
+- [🏡 Home Assistant](https://github.com/colinklich/homelab/tree/main/homeassistant) — Smart home services & automation
+- [🎬 Media Server](https://github.com/colinklich/homelab/tree/main/media) — Plex, Jellyfin, *arr stack, and more
+- [📊 Server Monitoring](https://github.com/colinklich/homelab/tree/main/monitoring) — Graphs & Visualizations for Unraid, Proxmox, and more
+- [💾 Storage](https://github.com/colinklich/homelab/tree/main/storage) — Current Storage and Backup Solution
+- [🌐 Proxy Management](https://github.com/colinklich/homelab/tree/main/proxy) — NGINX Proxy Manager, DDNS with Cloudflare, Local Domains, and more
 
-### Servers and NAS
-#### Rackmount Server (Proxmox)
-This machine is running our Proxmox Server. This machine currently hosts a Pi-hole DNS server, a Docker stack (n8n, OpenwebUI, Portainer), and a Kubernetes Cluster. Future plans include migrating the Plex stack, a minecraft server, and building out the Kubernetes cluster beyond bare metal.
-* Intel(R) Xeon(R) CPU E5-2697A v4 (16c/32t)
-* 256GB SODIMM DDR4 RAM
-* 256GB NVMe SSD (Boot Drive)
-* Nvidia Quadro P5000 16GB (PCIe passthrough to VMs)
-* x2 1TB HDD (ZFS Drive)
-* x2 Western Digital 4TB WD Red Plus (future addition)
+---
 
-#### AI/Gaming Rig (Windows 11)
-This machine is running Windows 11 currently with plans to upgrade to Ubunut 24.04 in the future. This PC hosts my Ollama server, making use of 2x RTX 3090 GPUs to server up local ai models. I also use it to play games (which is why it is still windows).
-* Ryzen 9 5900x (12c/24t)
-* 64GB DDR4 RAM 3600mhz
-* x2 RTX 3090 24GB GPUs (Ai Workloads)
-* x1 1TB NVME (Boot Drive)
-* x1 2TB NVME (AI models/games)
+## 🖥️ Hardware
 
-#### Synology NAS DS220+ (DSM)
-This is the first machine in the homelab. It currently runs all the backup software as well as the Plex stack. Future plans include migrating the Plex stack to the PVE.
-* Intel Celeron J4025
-* 10GB DDR4 RAM (2GB included/8GB added)
-* x1 8TB HDD
-* x1 10TB HDD
+![Homelab Rack Example](https://raw.githubusercontent.com/colinklich/homelab/main/storage/1_proxmox-repos.jpeg) <!-- Replace with your own image if available -->
 
-### Networking
-#### AT&T BGW-500
-Gigabit networking with all the hiccups of AT&T. Passthrough to Orbi.
+### 🗄️ Servers and NAS
 
-#### Orbi Wifi 6 Mesh System
-handles all routing.
+<details>
+<summary><strong>Rackmount Server (Proxmox)</strong></summary>
 
-#### Netgear Prosafe 24 port Gigabit unmanaged Switch JGS524 V2
-Eventually upgrade to 2.5gb or higher. 1gb is plenty for now.
+- **CPU:** Intel(R) Xeon(R) E5-2697A v4 (16c/32t)
+- **RAM:** 256GB SODIMM DDR4
+- **Boot:** 256GB NVMe SSD
+- **GPU:** Nvidia Quadro P5000 16GB (PCIe passthrough to VMs)
+- **Storage:** 2× 1TB HDD (ZFS), 2× 4TB WD Red Plus (future)
+- **Services:** Pi-hole, Docker stack (n8n, OpenwebUI, Portainer), Kubernetes, future Plex & Minecraft
+
+</details>
+
+<details>
+<summary><strong>AI/Gaming Rig (Windows 11)</strong></summary>
+
+- **CPU:** Ryzen 9 5900x (12c/24t)
+- **RAM:** 64GB DDR4 3600MHz
+- **GPU:** 2× RTX 3090 24GB (AI workloads)
+- **Storage:** 1TB NVMe (Boot), 2TB NVMe (AI models/games)
+- **Notes:** Hosts Ollama server for local AI models, gaming, planned upgrade to Ubuntu 24.04
+
+</details>
+
+<details>
+<summary><strong>Synology NAS DS220+ (DSM)</strong></summary>
+
+- **CPU:** Intel Celeron J4025
+- **RAM:** 10GB DDR4 (2GB stock + 8GB added)
+- **Storage:** 8TB HDD + 10TB HDD
+- **Role:** Backup software, Plex stack (to be migrated to PVE)
+
+</details>
+
+---
+
+### 🌐 Networking
+
+- **AT&T BGW-500:** Gigabit networking (passthrough to Orbi)
+- **Orbi Wifi 6 Mesh:** Handles all routing
+- **Netgear Prosafe 24-port Gigabit Switch (JGS524 V2):** Unmanaged, future upgrade to 2.5GbE or higher
+
+---
+
+> _Have questions or want to see more? Check out the [Apps](https://github.com/colinklich/homelab/tree/main/apps) directory for detailed guides and screenshots!_
+
+---
 
