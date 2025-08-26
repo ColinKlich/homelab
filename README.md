@@ -39,7 +39,7 @@
 - **RAM:** 64GB DDR4 3600MHz
 - **GPU:** 2× RTX 3090 24GB (AI workloads)
 - **Storage:** 1TB NVMe (Boot), 2TB NVMe (AI models/games)
-- **Notes:** Hosts Ollama server for local AI models, gaming, planned upgrade to Ubuntu 24.04
+- **Notes:** Hosts Ollama server for local AI models, comfyui(stable diffusion), gaming, planned upgrade to Ubuntu 24.04
 
 </details>
 
