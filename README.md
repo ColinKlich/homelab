@@ -68,3 +68,7 @@
 
 ---
 
+## 🌐 Network Diagram
+
+![Tailscale Network Icons](tailscale_network_icons.png)
+
