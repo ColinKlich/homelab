@@ -64,11 +64,9 @@
 
 ---
 
-> _Have questions or want to see more? Check out the [Apps](https://github.com/colinklich/homelab/tree/main/apps) directory for detailed guides and screenshots!_
-
----
-
 ## 🌐 Network Diagram
+
+All devices are connected through a [Tailscale](https://tailscale.com/) mesh network.
 
 ![Tailscale Network Icons](tailscale_network_icons.png)
 
