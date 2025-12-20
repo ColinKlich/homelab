@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-#    paths:
-#      - 'kubernetes/homepage/**'
+    paths:
+      - 'kubernetes/homepage/**'
 
 jobs:
   deploy:
