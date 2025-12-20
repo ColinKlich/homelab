@@ -31,3 +31,4 @@ jobs:
           kubectl apply -f kubernetes/homepage/configmap.yaml
           kubectl apply -f kubernetes/homepage/deployment.yaml
           kubectl rollout restart deployment homepage -n default
+          
