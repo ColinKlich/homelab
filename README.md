@@ -7,7 +7,6 @@
 ## 🚀 Navigation
 - [💾 Services](https://github.com/colinklich/homelab/tree/main/services) — Current Services running within my PVE
 - [🗂️ Apps](https://github.com/colinklich/homelab/tree/main/apps) — List of all the apps and services
-- [🏡 Home Assistant](https://github.com/colinklich/homelab/tree/main/homeassistant) — Smart home services & automation
 - [🎬 Media Server](https://github.com/colinklich/homelab/tree/main/media) — Plex, Jellyfin, *arr stack, and more
 - [📊 Server Monitoring](https://github.com/colinklich/homelab/tree/main/monitoring) — Graphs & Visualizations for Unraid, Proxmox, and more
 - [💾 Storage](https://github.com/colinklich/homelab/tree/main/storage) — Current Storage and Backup Solution
