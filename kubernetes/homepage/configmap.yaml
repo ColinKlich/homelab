@@ -1,0 +1,78 @@
+apiVersion: v1
+data:
+  bookmarks.yaml: |
+    - Infrastructure:
+        - Proxmox:
+            - abbr: PVE
+              href: https://10.0.0.60:8006/
+  kubernetes.yaml: |
+    mode: cluster
+  proxmox.yaml: |-
+    pve:
+      url: https://10.0.0.32:8006
+      token: root@pam!homepage
+      secret: "{{HOMEPAGE_VAR_PROXMOX_SECRET}}"
+      tlsInsecure: true
+  services.yaml: |-
+    - Virtualization:
+        - Proxmox:
+            icon: proxmox.png
+            href: https://10.0.0.32:8006/
+            widget:
+              type: proxmox
+              url: https://10.0.0.32:8006
+              username: root@pam!homepage
+              password: "{{HOMEPAGE_VAR_PROXMOX_SECRET}}"
+              node: pve
+              tlsInsecure: true
+
+    - Network Services:
+        - Pi-hole:
+            icon: pi-hole.png
+            href: http://10.0.0.50/admin/
+            widget:
+              type: pihole
+              url: http://10.0.0.50
+              version: 6
+              key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
+        - Traefik:
+            icon: traefik.png
+            href: http://10.0.0.60:8080/dashboard/
+
+    - Monitoring:
+        - Grafana:
+            icon: grafana.png
+            href: http://grafana.local
+            widget:
+              type: grafana
+              url: http://monitoring-grafana.monitoring.svc.cluster.local
+              key: "{{HOMEPAGE_VAR_GRAFANA_TOKEN}}"
+  settings.yaml: ""
+  widgets.yaml: |-
+    - datetime:
+        text_size: xl
+        format: { "timeStyle": "short", "dateStyle": "long" }
+    - openmeteo:
+        label: Nashville
+        latitude: 36.1627
+        longitude: -86.7816
+        timezone: America/Chicago
+        units: imperial
+        text_size: l
+        show_icon: true
+    - search:
+        provider: google
+        target: _blank
+        text_size: s
+    - kubernetes:
+        cluster:
+          show: true
+          label: "K3s Cluster"
+        nodes:
+          show: true
+          label: "Node Health"
+kind: ConfigMap
+metadata:
+  name: homepage
+  namespace: default
+
