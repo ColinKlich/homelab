@@ -14,11 +14,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Connect to Tailscale
-        uses: tailscale/github-action@v2
-        with:
-          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
-          version: 1.54.0
-          args: --overwrite-keys
+        shell: bash
+        run: |
+          curl -fsSL https://tailscale.com/install.sh | sh
+          sudo tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
+          until sudo tailscale up --authkey=${{ secrets.TAILSCALE_AUTHKEY }} --hostname=github-action; do
+            sleep 1
+          done
 
       - name: Setup Kubectl
         uses: azure/k8s-set-context@v3
