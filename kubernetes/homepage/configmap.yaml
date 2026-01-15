@@ -42,11 +42,10 @@ data:
     - Monitoring:
         - Grafana:
             icon: grafana.png
-            href: http://grafana.local
+            href: http://localhost:3000/public-dashboards/d793efe319e946ffbd92380e43d7f9c1
             widget:
-              type: grafana
-              url: http://monitoring-grafana.monitoring.svc.cluster.local
-              key: "{{HOMEPAGE_VAR_GRAFANA_TOKEN}}"
+              type: iframe
+              url: http://localhost:3000/public-dashboards/d793efe319e946ffbd92380e43d7f9c1
     - Applications:
         - AlgoMap:
             icon: kubernetes.png
