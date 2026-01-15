@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`algomap-backend.colinklich.com`) && PathPrefix(`/api`)
+    - match: Host(`algomap.colinklich.com`) && PathPrefix(`/api`)
       kind: Rule
       services:
         - name: algomap-backend

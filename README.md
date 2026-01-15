@@ -8,7 +8,7 @@
 - [💾 Services](https://github.com/colinklich/homelab/tree/main/services) — Current Services running within my PVE
 - [🗂️ Apps](https://github.com/colinklich/homelab/tree/main/apps) — List of all the apps and services
 - [🎬 Media Server](https://github.com/colinklich/homelab/tree/main/media) — Plex, Jellyfin, *arr stack, and more
-- [📊 Server Monitoring](https://github.com/colinklich/homelab/tree/main/monitoring) — Graphs & Visualizations for Unraid, Proxmox, and more
+- [📊 Server Monitoring](https://github.com/colinklich/homelab/tree/main/monitoring) — Graphs & Visualizations for Proxmox, Kubernetes and more
 - [💾 Storage](https://github.com/colinklich/homelab/tree/main/storage) — Current Storage and Backup Solution
 - [🌐 Proxy Management](https://github.com/colinklich/homelab/tree/main/proxy) — NGINX Proxy Manager, DDNS with Cloudflare, Local Domains, and more
 
@@ -28,7 +28,7 @@
 - **Boot:** 256GB NVMe SSD
 - **GPU:** Nvidia Quadro P5000 16GB (PCIe passthrough to VMs)
 - **Storage:** 2× 1TB HDD (ZFS), 2× 4TB WD Red Plus (future)
-- **Services:** Pi-hole, Docker stack (n8n, OpenwebUI, Portainer), Kubernetes, future Plex & Minecraft
+- **Services:** Pi-hole, Docker stack (n8n, OpenwebUI, Portainer), Kubernetes cluster, future Plex & Minecraft
 
 </details>
 

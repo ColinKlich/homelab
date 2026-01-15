@@ -35,7 +35,7 @@ Here is a list of the services running within my PVE.
 - Will allow more simultaneous users (friends & family)
 
 ## 6. K3s Kubernetes Cluster
-- Comprised of master node (Debian) and 2 worker nodes(Debian)
-- Experimental
-- Does not currently run any services
-- No current plans to migrate
+- Comprised of master node (Debian) and 2 worker nodes (Debian)
+- Currently runs Grafana and Homepage dashboards
+- Hosts [Algomap](https://github.com/ColinKlich/AlgoMap) backend
+- More info in the [kubernetes](https://github.com/ColinKlich/homelab/tree/main/kubernetes) folder

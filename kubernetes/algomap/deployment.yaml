@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: algomap-backend
-        # your-registry/algomap-backend:latest
         image: tsilver1/algomap-backend:v1.1
         ports:
         - containerPort: 8000
@@ -24,8 +23,6 @@ spec:
         - name: cache-volume
           mountPath: /app/cache
       volumes:
-      # IMPORTANT: hostPath volumes are not recommended for production.
-      # Use a PersistentVolumeClaim or other persistent storage solutions for production.
       - name: data-volume
         hostPath:
           path: /path/to/your/backend/data

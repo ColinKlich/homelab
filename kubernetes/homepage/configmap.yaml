@@ -47,6 +47,11 @@ data:
               type: grafana
               url: http://monitoring-grafana.monitoring.svc.cluster.local
               key: "{{HOMEPAGE_VAR_GRAFANA_TOKEN}}"
+    - Applications:
+        - AlgoMap:
+            icon: kubernetes.png
+            href: http://algomap-backend
+            description: Algorithm visualization tool
   settings.yaml: ""
   widgets.yaml: |-
     - datetime:
