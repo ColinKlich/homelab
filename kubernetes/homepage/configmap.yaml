@@ -51,6 +51,7 @@ data:
         - AlgoMap:
             icon: kubernetes.png
             href: http://algomap-backend
+            ping: http://algomap-backend/health
             description: Algorithm visualization tool
   settings.yaml: ""
   widgets.yaml: |-
